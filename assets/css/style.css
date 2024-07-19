@@ -1264,6 +1264,22 @@ address {
 
 @media (min-width: 1200px) {
 
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
   /**
    * CUSTOM PROPERTY
    */
