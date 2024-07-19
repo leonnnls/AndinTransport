@@ -1,24 +1,6 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
-  /**
-   * colors
-   */
+  /** colors */
 
   --united-nations-blue: hsl(214, 56%, 58%);
   --bright-navy-blue: hsl(214, 57%, 51%);
@@ -35,9 +17,7 @@
   --onyx: hsl(0, 0%, 25%);
   --jet: hsl(0, 0%, 20%);
 
-  /**
-   * typography
-   */
+  /** typography */
 
   --ff-poppins: "Poppins", sans-serif;
   --ff-montserrat: "Montserrat", sans-serif;
@@ -56,21 +36,16 @@
   --fw-700: 700;
   --fw-800: 800;
 
-  /**
-   * transition
-   */
+
+  /** Transition */
 
   --transition: 0.25s ease-in-out;
 
-  /**
-   * spacing
-   */
+  /** Space */
 
   --section-padding: 60px;
 
-  /**
-   * border-radius
-   */
+  /** Border Radius */
 
   --radius-15: 15px;
   --radius-25: 25px;
@@ -78,12 +53,7 @@
 }
 
 
-
-
-
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
+/** Reset */
 
 *, *::before, *::after {
   margin: 0;
@@ -127,9 +97,7 @@ body { background: var(--white); }
 
 
 
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
+/** Re Used Style */
 
 .container { padding-inline: 15px; }
 
@@ -197,6 +165,10 @@ body { background: var(--white); }
 
 .card-text {
   color: var(--black-coral);
+  text-align: justify; /* Menyusun teks secara rata kiri dan kanan */
+  line-height: 1.5; /* Menambahkan jarak antar baris */
+  margin: 0; /* Menghilangkan margin default */
+  padding: 10px; /* Menambahkan padding untuk ruang tambahan */
   font-size: var(--fs-5);
 }
 
@@ -204,9 +176,7 @@ body { background: var(--white); }
 
 
 
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
+/** Header */
 
 .header {
   position: absolute;
@@ -368,11 +338,7 @@ body { background: var(--white); }
 
 
 
-
-
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
+/** Hero */
 
 .hero {
   background-image: url("../images/Andin_hero.JPEG");
@@ -406,11 +372,7 @@ body { background: var(--white); }
 
 
 
-
-
-/*-----------------------------------*\
- * #TOUR SEARCH
-\*-----------------------------------*/
+/** Tour Search */
 
 .tour-search {
   background: var(--bright-navy-blue);
@@ -448,12 +410,7 @@ body { background: var(--white); }
 }
 
 
-
-
-
-/*-----------------------------------*\
- * #POPULAR
-\*-----------------------------------*/
+/** Popular */
 
 .popular { padding-block: var(--section-padding); }
 
@@ -573,9 +530,7 @@ body { background: var(--white); }
 .popularsmall .btn { margin-inline: auto; }
 
 
-/*-----------------------------------*\
- * #PACKAGE
-\*-----------------------------------*/
+/** Berita */
 
 .package { padding-block: var(--section-padding); }
 
@@ -688,12 +643,7 @@ body { background: var(--white); }
 .package .btn { margin-inline: auto; }
 
 
-
-
-
-/*-----------------------------------*\
- * #GALLERY
-\*-----------------------------------*/
+/** Photo Gallery */
 
 .gallery { padding-block: var(--section-padding); }
 
@@ -720,11 +670,7 @@ body { background: var(--white); }
 
 
 
-
-
-/*-----------------------------------*\
- * #CTA
-\*-----------------------------------*/
+/** #CTA */
 
 .cta {
   background: var(--bright-navy-blue);
@@ -737,11 +683,7 @@ body { background: var(--white); }
 
 
 
-
-
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
+/** Footer */
 
 .footer-top {
   background: var(--gunmetal);
@@ -870,9 +812,7 @@ address {
 
 
 
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
+/** Go to Top */
 
 .go-top {
   position: fixed;
@@ -905,9 +845,7 @@ address {
 
 
 
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
+/** Media Queries */
 
 /**
  * responsive for larger than 580px screen
@@ -915,9 +853,7 @@ address {
 
 @media (min-width: 580px) {
 
-  /**
-   * REUSED STYLE
-   */
+/** Reused Style */
 
   .container {
     max-width: 580px;
