@@ -539,6 +539,41 @@ body { background: var(--white); }
 .popularsmall .btn { margin-inline: auto; }
 
 
+/** Icon-Car */
+
+.car-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Sesuaikan jarak atas jika diperlukan */
+}
+
+.car-icon {
+  font-size: 19px; /* Sesuaikan ukuran ikon jika diperlukan */
+  margin-right: 8px; /* Jarak antara ikon dan teks */
+}
+
+.car-seats-text {
+  font-size: 10px; /* Sesuaikan ukuran font teks jika diperlukan */
+}
+
+.car-info, .engine-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Jarak antara elemen jika diperlukan */
+}
+
+.car-icon, .speedo-icon {
+  font-size: 19px; /* Sesuaikan ukuran ikon jika diperlukan */
+  margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.car-seats-text, .engine-text {
+  font-size: 10px; /* Sesuaikan ukuran font teks jika diperlukan */
+  margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+
+
 /** Berita */
 
 .package { padding-block: var(--section-padding); }
