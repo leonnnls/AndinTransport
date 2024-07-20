@@ -198,6 +198,15 @@ body { background: var(--white); }
   z-index: 1;
 }
 
+/* Media query untuk smartphone */
+@media (max-width: 767px) {
+  .header-top {
+    position: fixed; /* Mengubah posisi menjadi fixed untuk memastikan tetap terlihat saat di-scroll */
+    padding-block: 10px; /* Mengurangi padding untuk tampilan yang lebih pas di layar kecil */
+  }
+}
+
+
 .header.active .header-top {
   position: fixed;
   background: var(--gunmetal);
