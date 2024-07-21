@@ -912,7 +912,7 @@ address {
     }
   }
   
-@media (max-width: 480px) {
+@media (max-width: 435px) {
       body {
           font-size: 14px;
     }
