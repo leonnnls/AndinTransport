@@ -198,15 +198,6 @@ body { background: var(--white); }
   z-index: 1;
 }
 
-/* Media query untuk smartphone */
-@media (max-width: 767px) {
-  .header-top {
-    position: fixed; /* Mengubah posisi menjadi fixed untuk memastikan tetap terlihat saat di-scroll */
-    padding-block: 10px; /* Mengurangi padding untuk tampilan yang lebih pas di layar kecil */
-  }
-}
-
-
 .header.active .header-top {
   position: fixed;
   background: rgba(255, 255, 255, 0.8); /* transparan */
@@ -889,13 +880,44 @@ address {
 
 
 
-/** Media Queries */
+/* Media Queries */
 
-/**
- * responsive for larger than 580px screen
- */
+/* Media query untuk smartphone */
+@media (max-width: 767px) {
+  .header-top {
+    position: fixed; /* Mengubah posisi menjadi fixed untuk memastikan tetap terlihat saat di-scroll */
+    padding-block: 10px; /* Mengurangi padding untuk tampilan yang lebih pas di layar kecil */
+  }
+}
 
+/* responsive for larger than 580px screen */
 @media (min-width: 580px) {
+
+/* responsive for larger than 768px screen */
+@media (min-width: 768px) {
+
+/* responsive for larger than 992px screen */
+@media (min-width: 992px) {
+
+/* responsive for larger than 1200px screen */
+@media (min-width: 1200px) {
+
+@media (max-width: 768px) {
+      header, main, footer {
+          padding: 10px;
+    }
+  
+      .container {
+          padding: 0 10px;
+    }
+  }
+  
+@media (max-width: 480px) {
+      body {
+          font-size: 14px;
+    }
+  }
+  
 
 /** Reused Style */
 
@@ -990,11 +1012,7 @@ address {
 
 
 
-/**
- * responsive for larger than 768px screen
- */
 
-@media (min-width: 768px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1137,16 +1155,6 @@ address {
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 992px screen
- */
-
-@media (min-width: 992px) {
-
   /**
    * REUSED STYLE
    */
@@ -1278,32 +1286,6 @@ address {
 
   .footer-form .btn { width: 100%; }
 
-}
-
-
-
-
-
-/**
- * responsive for larger than 1200px screen
- */
-
-@media (min-width: 1200px) {
-
-@media (max-width: 768px) {
-    header, main, footer {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 0 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
 }
 
   /**
