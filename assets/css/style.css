@@ -488,7 +488,7 @@ body { background: var(--white); }
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-25);
-  height: 330px;
+  height: 430px;
 }
 
 .popularsmall-card .card-img { height: 100%; }
