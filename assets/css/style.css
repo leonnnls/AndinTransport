@@ -533,7 +533,36 @@ body { background: var(--white); }
   color: var(--white);
 }
 
-.has-scrollbar {
+  /**
+   * PROPERTY
+   */
+
+  .property .container {
+    max-width: unset;
+    padding-inline: 25px;
+  }
+
+  /**
+   * PROPERTY
+   */
+
+  .property-card .card-content { padding-inline: 30px; }
+
+  .card-footer { padding: 20px 30px 30px; }
+
+  ::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track { background: var(--white); }
+
+::-webkit-scrollbar-thumb {
+  background: var(--cadet);
+  border-left: 2px solid var(--white);
+}
+
+  .has-scrollbar {
   display: flex;
   align-items: flex-start;
   gap: 15px;
@@ -544,7 +573,6 @@ body { background: var(--white); }
   padding-bottom: 60px;
   scroll-snap-type: inline mandatory;
 }
-
 
 .has-scrollbar > li {
   min-width: 100%;
@@ -565,16 +593,11 @@ body { background: var(--white); }
 
 .has-scrollbar::-webkit-scrollbar-button { width: 15%; }
 
-.has-scrollbar {
-    gap: 25px;
-    margin-inline: -25px;
-    padding-inline: 25px;
-    scroll-padding-left: 25px;
-  }
-
 .has-scrollbar > li { min-width: calc(50% - 12.5px); }
 
 .has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
+
+
 
 
 
@@ -1130,11 +1153,51 @@ address {
   }
 }
 
+@media (min-width: 600px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-2: 1.875rem;
+
+  }
+
+  .has-scrollbar {
+    gap: 25px;
+    margin-inline: -25px;
+    padding-inline: 25px;
+    scroll-padding-left: 25px;
+  }
+}
+
 /* responsive for larger than 580px screen */
 @media (min-width: 580px) {
 
 /* responsive for larger than 768px screen */
 @media (min-width: 768px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 2.5rem;
+    --fs-5: 0.938rem;
+    --fs-6: 0.875rem;
+
+  }
 
 /* responsive for larger than 992px screen */
 @media (min-width: 992px) {
@@ -1265,6 +1328,7 @@ address {
      */
 
     --fs-5: 15px;
+    
 
   }
 
