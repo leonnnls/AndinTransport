@@ -100,10 +100,10 @@
                <div class="container">
                   <h2 class="h1 hero-title" style="font-size: 1.5rem; margin-top: -10px;">Pilihan Revolusioner untuk Sewa Mobil yang Berkualitas</h2>
                   <br>
-                  <p class="hero-text">
-                     Platform penyewaan mobil online yang aman dan tepercaya. 
+                  <p class="hero-text">Platform penyewaan mobil online yang aman dan tepercaya. 
                      Anda bisa menyewa mobil harian, mingguan, atau bulanan untuk keperluan pribadi maupun perusahaan!
                   </p>
+
                   <!-- Kalau butuh Pake ajaa -->
                   <!--
                      <div class="btn-group">
@@ -424,7 +424,7 @@
                   <img src="./assets/images/logo/Andin_Transport.png" alt="logo">
                   </a>
                   <p class="footer-text">
-                     latform penyewaan mobil online yang aman dan tepercaya. Anda dapat 
+                     Platform penyewaan mobil online yang aman dan tepercaya. Anda dapat 
                      temukan lokasi kami dan hubungi kami untuk informasi lebih lanjut!          
                   </p>
                </div>
@@ -452,6 +452,35 @@
                      </li>
                   </ul>
                </div>
+               
+               <!-- API Google Maps -->
+               <div class="row">
+                  <div class="col-md-6">
+                     <p class="form-text">
+                        Our Location based Google Maps
+                     </p>
+                      <div id="map" class="card-shadow-2" style="width:100%;height:300px"></div>
+                          <script>
+                          function myMap() {
+                                var mapCanvas = document.getElementById("map");
+                                var myCenter = new google.maps.LatLng(-7.322234083204818,112.75967783615445);
+                                var mapOptions = {center: myCenter, zoom: 18};
+                                var map = new google.maps.Map(mapCanvas,mapOptions);
+                                var marker = new google.maps.Marker({
+                                  position: myCenter,
+                                  animation: google.maps.Animation.BOUNCE
+                                });
+                                marker.setMap(map);
+                          }
+                          </script>
+                          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXyK9sf3rI0EKVupuALaOAzq1NKlUES98&callback=myMap"></script>
+                  </div>
+
+                  <div class="col-md-6"></div>
+              </div>
+
+
+              <!-- Pake Aja kalau mau
                <div class="footer-form">
                   <p class="form-text">
                      Subscribe untuk tetap update dengan berita dan informasi terbaru dari Andin Transport!
@@ -461,6 +490,8 @@
                      <button type="submit" class="btn btn-secondary">Subscribe</button>
                   </form>
                </div>
+            -->
+
             </div>
          </div>
          <div class="footer-bottom">
