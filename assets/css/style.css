@@ -1267,7 +1267,7 @@ address {
 /* Media Queries */
 
 /* Media query untuk smartphone */
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .header-top {
     position: fixed; /* Mengubah posisi menjadi fixed untuk memastikan tetap terlihat saat di-scroll */
     padding-block: 10px; /* Mengurangi padding untuk tampilan yang lebih pas di layar kecil */
@@ -1295,8 +1295,8 @@ address {
   }
 }
 
-/* responsive for larger than 580px screen */
-@media (min-width: 580px) {
+/* responsive for larger than 400px screen */
+@media (min-width: 370px) {
   /* responsive for larger than 768px screen */
   @media (min-width: 768px) {
     /**
@@ -1748,6 +1748,105 @@ address {
     }
   }
 
+  /** Footer Privacy Policy */
+
+  ul.footer-bottom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.footer-bottom-list li {
+    margin: 0;
+}
+
+footer-bottom-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #185adb;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75em 1.25em;
+    border-radius: 99em;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.footer-bottom-link:hover,
+.footer-bottom-link:focus {
+    background-color: #185adb;
+    color: #fff;
+}
+
+details {
+    position: relative;
+}
+
+details summary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.75em 1.25em;
+    border-radius: 99em;
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease;
+}
+
+details summary:hover,
+details summary:focus {
+    background-color: #123a74;
+}
+
+details[open] div {
+    animation: scale 0.25s ease;
+}
+
+details div {
+  background-color: #1e1e27;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.25rem;
+  border-radius: 8px;
+  position: fixed; /* Use fixed positioning to place the element relative to the viewport */
+  max-height: calc(100vh - 100px);
+  width: 6000px;
+  max-width: calc(100vw - 2rem);
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset by 50% of its own width and height to center exactly */
+  overflow: auto;
+  color: #95a3b9;
+  z-index: 10;
+}
+
+
+details div::-webkit-scrollbar {
+    width: 15px;
+    background-color: #1e1e27;
+}
+
+details div::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 99em;
+    background-color: #95a3b9;
+    border: 5px solid #1e1e27;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+}
+
   /**
    * CUSTOM PROPERTY
    */
@@ -1767,4 +1866,4 @@ address {
   .container {
     max-width: 1180px;
   }
-}
+
