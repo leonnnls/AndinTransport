@@ -285,7 +285,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 15px;
+  padding-block: 35px;
 }
 
 .social-list {
@@ -739,11 +739,12 @@ body {
   margin-top: 35px;
 }
 
-/** Popular */
+/** Popular Space Padding */
 
 .popular {
   padding-block: var(--section-padding);
 }
+
 
 .popular-list,
 .popular-list > li:not(:last-child) {
