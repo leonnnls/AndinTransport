@@ -743,7 +743,9 @@ body {
 
 .popular {
   padding-block: var(--section-padding);
+  margin-top: -90px; /* Sesuaikan dengan jarak yang diinginkan */
 }
+
 
 
 .popular-list,
