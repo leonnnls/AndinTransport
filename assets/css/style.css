@@ -1809,22 +1809,50 @@ details[open] div {
     animation: scale 0.25s ease;
 }
 
+/** Page Privacy Policy */
 details div {
   background-color: #1e1e27;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   padding: 1.25rem;
   border-radius: 8px;
-  position: fixed; /* Use fixed positioning to place the element relative to the viewport */
+  position: fixed; 
   max-height: calc(100vh - 100px);
-  width: 6000px;
+  width: 600px; 
   max-width: calc(100vw - 2rem);
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Offset by 50% of its own width and height to center exactly */
-  overflow: auto;
+  overflow: auto; /* Mengatur overflow menjadi auto */
   color: #95a3b9;
   z-index: 10;
+  
+  text-align: justify;
+  line-height: 1.6;
 }
+
+
+details div::-webkit-scrollbar {
+  display: none;
+}
+
+details div p {
+  margin-bottom: 1rem;
+}
+
+details div h1, details div h2, details div h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+details div ul, details div ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+details div ul li, details div ol li {
+  margin-bottom: 0.5rem;
+}
+
 
 
 details div::-webkit-scrollbar {
